@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="admin_menu_block">
+        <div class="admin_menu">
+            <div class="admin_logo"><img class="admin_img" src="./img/logoPayDay.png" alt="logo"></div>
+            <button class="admin_main">Главная</button>
+            <button class="admin_banks">Банки</button>
+            <button class="admin_university">Институты</button>
+        </div>
+    </div>
+    <senction class="banks">
+        <div class="flex_column">
+            <div class="page">Главная/Институты</div>
+            <form id="navigation_row_block" class="navigation_input_block">
+                <input type="hidden" name="universityId" value="6"> 
+                <input type="text" name="searchString" class="navigation_input" placeholder="Введите название Вуза">
+                <input type="image" src="/img/Vector.svg" alt="search" class="navigation_search">
+            </form>
+                <div class="hamburger">
+                    <span class="second_line"></span>
+                    <span class="first_line"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row flex_row">
+            <div class="row row-cols-lg-10 flex_container_center">
+
+                <div class="col-11 navigation_card navigation_bank_text" id="add">
+                  <div class="navigation_bank" id="add_text">
+                      <img src="./img/icons/alpha.png" alt="navigation" class="navigation_icon add_img" >Альфа Банк</div>
+                        <div class="navigation_credit add_procent" >
+                            <div class="delete_btn"><img class="delete_btn_img_black" src="./img/del_black.svg" alt="del"><img class="delete_btn_img_red" src="./img/del_red.svg" alt="del"></div>
+                            <div class="delete_btn"><img class="delete_btn_img_black" src="./img/pencil_black.svg" alt="del"><img class="delete_btn_img_red" src="./img/pencil_red.svg" alt="del"></div>
+                            
+                        </div> 
+                 </div>
+                 
+        </div>
+    </senction>
+    
+</body>
+</html>

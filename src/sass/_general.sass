@@ -1,0 +1,558 @@
+header
+    z-index: 1
+    position: fixed
+    top: 0px
+    width: 100%
+    height: 70px
+    display: flex
+    justify-content: space-between
+    align-content: center
+    align-items: center
+    background-color: #fff
+.fixed
+    width: 100px
+    background-color: #fff
+    height: 70px
+.menu
+    width: 435px
+    height: 58px
+    display: flex
+    justify-content: left
+    align-content: center
+    align-items: center
+    margin-left: 88px
+    &_logo
+        width: 40px
+        height: 52px
+    &_project_name
+        margin-left: 20px
+        &_text
+            color: #20D37D
+            font-size: 48px
+            font-style: normal
+            font-weight: 500
+
+    &_hamburger
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        display: block
+        position: absolute
+        left: 50px
+        top: 11px
+        transform: translateX(-50%)
+        height: 50px
+        width: 50px
+        background-color: #20D37D
+        border-radius: 9px
+        span
+            display: block
+            height: 5px
+            width: 32px
+            background-color: #fff
+            margin: 0 9px 6px 9px
+            &:nth-child(1)
+                margin-top: 12px
+            &:nth-child(3)
+                margin-bottom: 12px
+        &_active
+            transition: 0.8 all
+            span
+                
+                &:nth-child(1)
+                    margin-top: 12px
+                    transform: translateY(12px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    margin-top: 12px
+                    transform: translateY(-5px) rotate(45deg)
+.header_login
+    display: block
+    height: 100%   
+    padding-left: 19px
+    display: flex
+    align-items: center
+    margin-right: 10px
+    width: 290px
+    height: 71px
+    background-color: #43CA79
+    border-radius: 40px
+    color: #FFF
+    font-size: 32px
+    font-style: normal
+    font-weight: 500
+    &_text
+        padding-top: 6px
+        height: 100%
+        margin-left: 10px
+        display: flex
+        align-items: center
+        color: #000
+        font-size: 22px
+        font-style: normal
+        font-weight: 500
+.universe
+    position: relative
+    min-height: 640px
+    padding: 90px 0 60px 0
+    background: linear-gradient(0deg, #ECECEC 0%, #ECECEC 100%), #E8E8E8
+    &_input_block
+        display: flex
+        position: relative
+        justify-content: center
+        align-items: center
+        height: 50px
+        margin-bottom: 25px
+    &_input
+        padding-left: 20px
+        height: 100%
+        border-radius: 40px
+        display: block
+        width: 100%
+        border: 0px
+        &:focus
+            outline: none
+            border: 1px solid grey
+
+    &_search
+        height: 35px
+        width: 35px
+        position: absolute
+        right: 30px
+    &_card
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+        margin: 0 30px 20px 0
+        height: 205px
+        width: 205px
+        background-color: #fff
+        border-radius: 44px
+        &:nth-child(6)
+            margin-right: 0px
+        &:nth-child(11)
+            margin-right: 0px
+        
+            
+
+            
+        &_text
+            color: #2A2A2A
+            font-size: 24px
+            font-style: normal
+            font-weight: 500
+            span
+                color: #50D400
+                font-size: 16px
+                font-style: normal
+                font-weight: 500
+
+    &_icon
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        height: 130px
+        width: 130px
+    &_slid
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        height: 18px
+        width: 112px
+        display: flex
+        position: absolute
+        bottom: 30px
+        left: 50%
+        transform: translateX(-50%)
+        &_active
+            width: 20px
+            margin-right: 8px
+            border-radius: 50%
+            background-color: #fff
+        &_disable
+            span
+                width: 20px
+                margin-right: 8px
+                border-radius: 50%
+                background-color: #AEAEAE
+.navigation
+    background: linear-gradient(0deg, #ECECEC 0%, #ECECEC 100%), #E8E8E8
+    min-height: 660px
+    padding: 22px 0 30px 0
+    margin-top: 72px
+    &_input_block
+        display: flex
+        position: relative
+        justify-content: center
+        align-items: center
+        height: 60px
+        margin-bottom: 60px
+    &_input
+        padding-left: 20px
+        height: 100%
+        border-radius: 40px
+        display: block
+        width: 100%
+        border: 0px
+        font-size: 20px
+        &:focus
+            outline: none
+            border: 1px solid grey
+    &_fixed
+        background: linear-gradient(0deg, rgb(236, 236, 236) 0%, rgb(236, 236, 236) 100%), rgb(232, 232, 232)
+        height: 80px
+        width: 100%
+        position: absolute
+        top: 65px
+    #navigation
+        height: 70px
+        padding-top: 15px
+        top: 66px
+        width: 90%
+        left: 5%
+    &_banks
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        background: linear-gradient(0deg, #ECECEC 0%, #ECECEC 100%), #E8E8E8
+        position: fixed
+        top: 60px
+        display: flex
+        justify-content: space-between
+        height: 56px
+        margin-bottom: 10px
+        &_univer
+            width: 12%
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50px
+            background-color: #fff
+            color: #20D37D
+            font-size: 22px
+            font-style: normal
+            font-weight: 500
+        &_speciality
+            width: 82%
+            margin-left: 10px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50px
+            background-color: #fff
+            color: #20D37D
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+        &_sort
+            width: 57px
+            margin-left: 10px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            background-color: #fff
+            &_hamburger
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                background-color: #fff
+                span
+                    border-radius: 6px
+                    display: block
+                    height: 5px
+                    width: 27px
+                    background-color: #20D37D
+                    margin: 0 9px 6px 9px
+                    &:nth-child(1)
+                        margin-top: 12px
+                    &:nth-child(2)
+                        width: 19px
+                    &:nth-child(3)
+                        width: 11px
+                        margin-bottom: 12px
+            &_active
+                transition: 0.8 all
+                span
+                    
+                    &:nth-child(1)
+                        margin-top: 12px
+                        transform: translateY(12px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        margin-top: 12px
+                        transform: translateY(-5px) rotate(45deg)
+    &_search
+        height: 35px
+        width: 35px
+        position: absolute
+        right: 30px
+    &_info
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 56px
+        background-color: #fff
+        border-radius: 50px
+        &_text
+            color: #545454
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+    .container_flex
+        display: flex
+        justify-content: center
+        align-items: center
+    &_cost
+        position: absolute
+        right: 150px
+        color: #20D37D
+        font-size: 20px
+        font-style: normal
+        font-weight: 500
+    &_card
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+        margin-left: 30px
+        height: 60px
+        width: 880px
+        background-color: #fff
+        border-radius: 44px
+        &_text
+            
+            color: #2A2A2A
+            font-size: 24px
+            font-style: normal
+            font-weight: 500
+            span
+                
+                color: #50D400
+                font-size: 16px
+                font-style: normal
+                font-weight: 500
+    &_bank_text
+        
+        margin: 0 0 6px 0    
+        flex-direction: row
+        justify-content: space-between
+        color: #2A2A2A
+        font-size: 24px
+        font-style: normal
+        font-weight: 500
+
+    &_slid
+        display: flex
+        justify-content: center
+        height: 14px
+        width: 80px
+        &_active
+            width: 14px
+            margin-right: 6px
+            border-radius: 50%
+            background-color: #fff
+        &_disable
+            width: 14px
+            margin-right: 6px
+            border-radius: 50%
+            background-color: #AEAEAE
+    &_bank
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_icon
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        height: 45px
+        width: 45px
+    &_credit
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 380px
+        height: 25px
+        padding-right: 30px
+        &_prosent
+            padding-left: 33px
+            color: #20D37D
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+    &_choise
+        position: fixed
+        background: linear-gradient(0deg, #ECECEC 0%, #ECECEC 100%), #E8E8E8
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 50px
+        width: 100%
+        bottom: 50px
+.navigation_fixed_background
+    background: linear-gradient(0deg, #ECECEC 0%, #ECECEC 100%), #E8E8E8
+    height: 70px
+    width: 100%
+    position: fixed
+    top: 66px
+.back
+    -moz-user-select: none
+    -khtml-user-select: none
+    user-select: none
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center
+    z-index: 1
+    height: 72px
+    width: 72px
+    border-radius: 50%
+    background-color: #fff
+    position: fixed
+    left: 16px
+    bottom:60px
+    &_img
+        width: 60%
+        height: 60%
+footer
+    width: 100%
+    bottom: 0px
+    position: fixed
+    background-color: #fff
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    align-content: center
+    span
+        width: 200px
+        color: #20d37d
+        font-size: 20px
+        font-style: normal
+        font-weight: 500
+.row_flex
+    display: flex
+    justify-content: center
+.my_modal
+
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1050
+    display: none
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background-color: rgba(0, 0, 0, 0.5)
+
+    &__dialog
+
+        max-width: 600px
+        min-height: 400px
+        margin: 100px auto
+
+
+    &__content
+       
+        position: relative
+        height: 100%
+        width: 100%
+        padding: 40px
+        background-color: #fff
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        border-radius: 4px
+        max-height: 80vh
+        overflow-y: auto
+        border-radius: 50px
+
+    &__close
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        position: absolute
+        top: 8px
+        right: 14px
+        font-size: 30px
+        color: #000
+        opacity: .5
+        font-weight: 700
+        border: none
+        background-color: transparent
+        cursor: pointer
+
+.bank
+    &_title
+        position: absolute
+        left: 55px
+        top: 30px
+        font-size: 30px
+        font-weight: 500
+    &_information
+        display: flex
+        flex-direction: columns
+        justify-content: start
+        align-content: start
+    &_block_img
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        margin-top: 40px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 150px
+        height: 150px
+    &_img
+        -moz-user-select: none
+        -khtml-user-select: none
+        user-select: none
+        height: 60%
+    &_form
+        display: flex
+        flex-direction: column
+        align-content: start
+        margin-top: 60px
+        width: 450px
+    &_name
+        position: absolute
+        top: 70px
+        left: 270px
+.form_btn
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 50px
+    width: 150px
+    background-color: #20d37d
+    border-radius: 20px
+    color: #fff
+    &_img
+        height: 80%
+    &_block
+        display: flex
+        justify-content: right
+
+
+
+.show
+    display: block
+
+.hide
+    display: none

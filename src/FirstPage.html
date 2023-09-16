@@ -1,0 +1,38 @@
+@model List<University>
+
+    @{
+        ViewData["Title"] = "Home Page";
+    }
+
+<section class="universe">
+    <div class="container container_flex">
+        <div class="row row_flex">
+            <div class="universe_input_block col-md-12">
+                <input type="text" class="universe_input" placeholder="Введите название вуза или суза..."><img src="/img/logo/search.svg" alt="search" class="universe_search">
+            </div>
+            @{
+                foreach (var university in Model)
+                {
+                    <div class="col-2 universe_card universe_card_text">
+                        <img src="@university.ImageUrl" alt="universe" class="universe_icon">
+                        @university.Name @if (university.MinPlaceCost != 0) 
+                                        {
+                                            <span>от @university.MinPlaceCost тыс. руб</span>
+                                        }
+                    </div>
+                }
+            }
+        </div>
+    
+        </div>
+        <a asp-controller="Home" asp-action="SecondPage">
+            <input type="button" class="btn btn-primary"/>
+        </a>
+        <div class="universe_slid">
+            <span class="universe_slid_active"></span>
+            <span class="universe_slid_disable"></span>
+            <span class="universe_slid_disable"></span>
+            <span class="universe_slid_disable"></span>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
